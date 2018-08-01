@@ -8,7 +8,7 @@ var tom=new Dog('Tom')
 var jerry=new Dog('Jerry')
 tom.bite(jerry)
 jerry.bite.call(tom,tom)
-tom.bite.call(tom,tom)
+tom.bite.apply(tom,[tom])
 
 
 // 你先写个程序吧，里面定义一个叫做 Dog 的类，构造函数里传入狗的名字，
